@@ -1,6 +1,6 @@
 // Include packages needed for this application
-const fs = require('fs');
-const inquirer = require('inquirer');
+import fs from 'fs';
+import inquirer from 'inquirer';
 
 // Create an array of questions for user input
 const questions = [
@@ -29,11 +29,7 @@ const questions = [
     name: 'contributing',
     message: 'Provide contribution guidelines:',
   },
-  {
-    type: 'input',
-    name: 'tests',
-    message: 'Provide test instructions:',
-  },
+  
   {
     type: 'list',
     name: 'license',
